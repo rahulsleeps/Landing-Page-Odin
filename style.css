@@ -13,9 +13,10 @@ body {
 .header {
     display: flex;
     background-color: #1F2937 ;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: x-large;
+    gap: 400px;
 }
 
 .top-links {
@@ -29,27 +30,32 @@ a {
     color: #E5E7EB;
 }
 
-.top-content{
-    background-color: #1F2937;
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 680px;
-    gap: 400px;
+    height: 600px;
 }
 
+.one{
+    background-color: #1F2937;
+}
+
+/* This contains topmos */
 .text-button{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 450px;
-    gap: 10px;
+    gap: 12px;
+    margin-right: 20px;
 }
 
 
 .top-text{
     font-size: 48px;
     font-weight: 900;
+    color: white;
 }
 
 .placeholder{
@@ -59,4 +65,47 @@ a {
     width: 450px;
     height: 200px;
     background-color: grey;
+    flex-shrink: 0;
+}
+
+.button.one{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    background-color: #3882F6;
+    font-weight: 600;
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.two{
+    flex-direction: column;
+    gap: 50px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.boxes{
+    display: flex;
+    gap: 50px;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: grey;
+    gap: 12px;
+    align-items: center;
+    width: 195px;
+    text-align: center;
+}
+
+.box{
+    width: 195px;
+    height: 195px;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
 }
